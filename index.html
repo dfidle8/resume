@@ -1,0 +1,191 @@
+<!Doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <mete name="viewport" content="width=device.width, initial-scale=1.0">
+        <link rel="stylesheet" href="resume.css">
+        <title>Damion Fidler's Resume</title>
+        <script>
+            window.addEventListener('load', () => {
+                /*alert("You must use the scroll bar on the left as the scroll wheel function is disabled on this site");*/
+                var audio = document.getElementById("audio");
+
+                audio.volume = 0.5;
+            })
+
+            //force user to use scroll bar
+            window.addEventListener('wheel', function (e) {
+                e.preventDefault();
+            }, { passive: false })
+
+
+            //play music on scroll
+            window.addEventListener('scroll', () => {
+                document.getElementById("audio").play();
+            });
+
+            window.addEventListener("DOMContentLoaded", event => {
+                const audio = document.querySelector("audio");
+                audio.volume = 0.2;
+                audio.play();
+            });
+
+            function unmute() {
+                var audio = document.getElementById("audio");
+                audio.volume = 0.5;
+                audio.play();
+            }
+
+
+        </script>
+
+        <audio id="audio">
+            <source src="Audio/star-wars-theme-song.mp3" type="audio/mp3" controls>
+        </audio>
+
+</head>
+
+
+<header>
+    <a href="cover letter.html">Cover Letter</a>
+    <a href="references.html">References</a>
+    <a href="Damion S Fidler.pdf">Resume as a PDF</a>
+    <button type="button" onClick="unmute();">Unmute</button>
+</header>
+
+<body id="body" style="font-family: sans-serif" onmouseover="simulateClick();">
+    <div class="wrapper">
+        <div class="scroll-text">
+
+            <h1>Damion Fidler's Resume</h1>
+            <!--OBJECTIVE SECTION-->
+            
+                <h2>Objective</h2>
+                <p>To move up the IT ladder and gain more knowledge and experience.</p>
+            
+            <hr>
+           
+                <!--EXPERIENCE SECTION-->
+                <h3>Experience</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, repellat?</p>
+                <ul>
+                    <li>WGU Sept 2021 - Present</li>
+                    <ul>
+                        <li>B.S. Cyber Security &amp Information Assurance</li>
+                    </ul>
+                    <li>HCL C3I August 2021 - Present</li>
+                    <ul>
+                        <li>Help Desk Technician</li>
+                        <li>Utilizing the knowledge base to troubleshoot issues end users experience</li>
+                        <li>Working as a team player to assist colleagues in resolutions</li>
+                        <li>Identifying more complex issues and escalating as necessary for resolution</li>
+                        <li>Folling up on ticket until resolution is met</li>
+                        <li>Working with the SME and members of leadership to ensure Knowledge Base Articles are accurate</li>
+                    </ul>
+                    <li>Pomeroy Technologies Feb 2021 - Aug 2021</li>
+                    <ul>
+                        <li>Help Desk Technician</li>
+                        <li>Utilizing the knowledge base to troubleshoot issues end users experience</li>
+                        <li>Working as a team player to assist colleagues in resolutions</li>
+                        <li>Identifying more complex issues and escalating as necessary for resolution</li>
+                        <li>Folling up on ticket until resolution is met</li>
+                        <li>Working with the SME and members of leadership to ensure Knowledge Base Articles are accurate</li>
+                    </ul>
+                    <li>Spray-Tek Aug 2017 - Apr 2020</li>
+                    <ul>
+                        <li>Aug 2018 - Apr 2020</li>
+                        <li>Batcher</li>
+                        <li>Weigh materials to add to the batch and verify use of correct materials</li>
+                        <li>Counting inventory of remaining materials after run is finished</li>
+                        <li>Testing the completed batch for solid %</li>
+                        <li>Taking retain samples of raw and finished materials</li>
+                        <ul>
+                            <li>Aug 2017 - Mar 2018</li>
+                            <li>Packer</li>
+                            <li>Packing material to containers and weighing to appropriate weight</li>
+                            <li>Washing dryers between products runs and ensuring they are fully clean in a timely manner</li>
+                            <li>Check product samples to ensure that they meet the customer's specifications</li>
+                        </ul>
+                    </ul>
+
+                    <li>Kraft June 2013 - Dec 2013</li>
+                    <ul>
+                        <li>Packer/Inspector</li>
+                        <li>Load materials and products into package processing equipment</li>
+                        <li>Clean containers, materials, supplies, or work areas using solutions and hand tools</li>
+                        <li>Measure, weigh, and count products and materials</li>
+                    </ul>
+                    <li>McDonalds Feb 2008 - Aug 2017</li>
+                    <ul>
+                        <li>Dec 2015 - Aug 2017</li>
+                        <li>General Manager</li>
+                        <li>Manage human resources including training and hiring new employees</li>
+                        <li>Maintain and repair store servers and POS systems</li>
+                        <li>Oversee inventory control and profit</li>
+                        <ul>
+                            <li>Dec 2013 - Dec 2015</li>
+                            <li>Shift Manager</li>
+                            <li>Manage staff</li>
+                            <li>Maintain store equipment</li>
+                            <li>Ensure food safety controls are in place</li>
+                            <li>Control inventory</li>
+                            <li>manage shifts profitably</li>
+                            <ul>
+                                <li>Feb 2008 - Dec 2013</li>
+                                <li>Crew Member</li>
+                                <li>Keeping work area clean</li>
+                                <li>Ensure customers get their food in a fast and friendly manner</li>
+                            </ul>
+                        </ul>
+                    </ul>
+                    <li>Trinity Plastics Jan 2012 - June 2012</li>
+                    <ul>
+                        <li>Packer</li>
+                        <li>Jan 2012 - June 2012</li>
+                        <li>Examine and inspect containers, materials, and products to ensure that packing specifications are met</li>
+                        <li>Assemble, line, and pad cartons, crates and containers using hand tools</li>
+                    </ul>
+
+                </ul>
+
+                <h3>Education</h3>
+                <ul>
+                    <li>Western Governers University</li>
+                    <li>B.S. Cyber Security &amp Information Assurance</li>
+                    <li>Sept 2021 - Present</li>
+                </ul>
+
+                <h3>Accomplishments</h3>
+                <ul>
+                    <li>Certifications</li>
+                    <ul>
+                        <li>CompTIA A+ Jan 2021 - Jan 2024</li>
+                        <li>Certified McDonald's Organization Technology Person</li>
+                    </ul>
+                    <li>Awards</li>
+                    <ul>
+                        <li>Winner of McDonald's Philadelphia Region Leadership Award</li>
+                    </ul>
+                </ul>
+
+                <h3>Hobbies</h3>
+                <ul>
+                    <li>Programming</li>
+                    <li>Web Design</li>
+                    <li>Learning more about IT</li>
+                </ul>
+
+
+
+
+            
+        </div>
+
+
+
+
+
+</body>
+
+</html>
