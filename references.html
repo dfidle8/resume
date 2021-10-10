@@ -1,0 +1,91 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Damion's References</title>
+        <link rel="stylesheet" href="resume.css">
+        <script>
+            window.addEventListener('load', () => {
+                /*alert("You must use the scroll bar on the left as the scroll wheel function is disabled on this site");*/
+                var audio = document.getElementById("audio");
+
+                audio.volume = 0.5;
+            })
+
+            //force user to use scroll bar
+            window.addEventListener('wheel', function (e) {
+                e.preventDefault();
+            }, { passive: false })
+
+
+            //play music on scroll
+            window.addEventListener('scroll', () => {
+                document.getElementById("audio").play();
+            });
+
+            window.addEventListener("DOMContentLoaded", event => {
+                const audio = document.querySelector("audio");
+                audio.volume = 0.2;
+                audio.play();
+            });
+
+            function unmute() {
+                var audio = document.getElementById("audio");
+                audio.volume = 0.5;
+                audio.play();
+            }
+
+
+        </script>
+
+        <audio id="audio">
+            <source src="Audio/star-wars-theme-song.mp3" type="audio/mp3" controls>
+        </audio>
+    </head>
+
+    <header>
+        <a href="resume.html">Resume</a>
+        <a href="cover letter.html">Cover Letter</a>
+        <button type="button" onClick="unmute();">Unmute</button>
+    </header>
+
+    <body>
+
+<div class="wrapper">
+    <div class="scroll-text">
+    <h1>Damion Fidler's References</h1>
+    <hr>
+    <h2>Professional</h2>
+    <ul>
+        <li>Eddie Toro</li>
+            <ul>
+                <li>McDonalds: Area Supervisor McDonald's</li>
+                <li>Years Known: 10</li>
+                <li>Phone Number: 610-573-3131</li>
+            </ul>
+        
+        <li>Warren Huber</li>
+            <ul>
+                <li>Spray-Tek: Operator</li>
+                <li>Years Known: 3</li>
+            </ul>
+    </ul>
+    <hr>
+    <h2>Personal</h2>
+    <ul>
+        <li>Robert Getz</li>
+            <ul>
+                <li>Friend</li>
+                <li>Years Known: 18</li>
+                <li>717-437-1650</li>
+            </ul>
+        
+        <li>Corey Creen</li>
+            <ul>
+                <li>Friend</li>
+                <li>Years Known: 3</li>
+            </ul>
+    </ul>
+    </div>
+</div>
+</body>
+</html>

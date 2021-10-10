@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap');
+body{
+    background: rgb(20,20,20);
+    overflow: hidden;
+    font-family: 'Roboto';
+    /*push down the wrapper half the page*/
+    margin: 50 0 0 0;
+    position: relative;
+    
+
+}
+
+a{
+    color: red;
+}
+.wrapper{
+    display: flex;
+    height: 100%;
+    width: 60%;
+    margin: 0 auto;
+    perspective: 70vw/*1000px;*/
+
+}
+
+.scroll-text{
+    color: #ffc909;
+    font-size: 2vw;
+    line-height: 1.5em;
+    font-weight: bold;
+    /*text-align: justify;*/
+    position: relative;
+    animation: scroll 150s linear forwards;
+
+}
+
+h1, h2, h3{
+    text-align:center
+}
+
+@keyframes scroll{
+    /*from{ top:0; transform: translateZ(0) rotateX(20deg)}
+    to { top: -7500px; transform: translateZ(-1900px) rotateX(21deg)}*/  
+    
+    from{ top:0; transform: translateZ(0) rotateX(20deg)}
+    to { top: -7500px; transform: translateZ(-1900px) rotateX(21deg)}  
+}
